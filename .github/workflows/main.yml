@@ -15,7 +15,7 @@ jobs:
 
 #   sonarcloud: 
 #     needs: build 
-#     uses: palash150403/git-nexus-task/.github/workflows/scan.yml@test     
+#     uses: palash150403/git-nexus-task/.github/workflows/scan.yml@test      
 #     secrets: 
 #       GIT_TOKEN: ${{ secrets.GIT_TOKEN }}  
 #       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }} 
