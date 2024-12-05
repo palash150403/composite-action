@@ -13,7 +13,7 @@ jobs:
   build:
     uses: palash150403/git-nexus-task/.github/workflows/build-pack.yml@test
 
-  sonarcloud:
+  sonarcloud: 
     needs: build
     uses: palash150403/git-nexus-task/.github/workflows/scan.yml@test     
     secrets: 
