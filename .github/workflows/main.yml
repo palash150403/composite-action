@@ -13,12 +13,12 @@ jobs:
   build:
     uses: palash150403/git-nexus-task/.github/workflows/build-pack.yml@test
 
-#   sonarcloud: 
-#     needs: build 
-#     uses: palash150403/git-nexus-task/.github/workflows/scan.yml@test      
-#     secrets: 
-#       GIT_TOKEN: ${{ secrets.GIT_TOKEN }}   
-#       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}  
+  sonarcloud: 
+    needs: build 
+    uses: palash150403/git-nexus-task/.github/workflows/scan.yml@test      
+    secrets: 
+      GIT_TOKEN: ${{ secrets.GIT_TOKEN }}   
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}  
  
   push_to_nexus:
     needs: build
