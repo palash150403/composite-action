@@ -10,7 +10,7 @@ on:
   workflow_dispatch:   
 
 jobs:
-  build:
+  build: 
     uses: palash150403/git-nexus-task/.github/workflows/build-pack.yml@test
 
   sonarcloud: 
