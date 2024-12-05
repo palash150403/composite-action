@@ -23,7 +23,7 @@ jobs:
   push_to_nexus: 
     needs: sonarcloud
     uses: palash150403/git-nexus-task/.github/workflows/push-nexus.yml@test
-    secrets:
+    secrets: 
       NEXUS_USERNAME: ${{ secrets.NEXUS_USERNAME }} 
       NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
       NEXUS_API_KEY: ${{ secrets.NEXUS_API_KEY }}
