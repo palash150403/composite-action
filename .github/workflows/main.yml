@@ -30,4 +30,4 @@ jobs:
     with:
       NEXUS_URL_DEVELOP: ${{ vars.NEXUS_URL_DEVELOP }}
       NEXUS_URL_MAIN: ${{ vars.NEXUS_URL_MAIN }}
-      NEXUS_URL_RELEASE: ${{ vars.NEXUS_URL_RELEASE }}
+      NEXUS_URL_RELEASE: ${{ vars.NEXUS_URL_RELEASE }} 
