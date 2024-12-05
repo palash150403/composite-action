@@ -21,7 +21,7 @@ jobs:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}  
  
   push_to_nexus:
-    needs: build
+    needs: sonarcloud
     uses: palash150403/git-nexus-task/.github/workflows/push-nexus.yml@test
     secrets: 
       NEXUS_USERNAME: ${{ secrets.NEXUS_USERNAME }} 
